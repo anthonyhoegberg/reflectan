@@ -1,12 +1,16 @@
 {
   "name": "reflectan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/reflectan.umd.js",
   "module": "dist/reflectan.es.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthonyhoegberg/reflectan.git"
+  },
   "scripts": {
     "build": "vite build"
   },
