@@ -14,7 +14,7 @@ const initialState = {
   settings: {
     theme: 'light',
     notifications: true
-  }
+  },
   array: ["hello", "world"]
 };
 ```
@@ -36,8 +36,7 @@ const [array, setArray] = useStore(state => state.array);
 // ArrayItem is string
 const [arrayItem, setArrayItem] = useStore(state => state.array[index]); 
 ```
-And since we use immer we can only modify the data using the set methods kinda like `useState` but we use drafts from immer
-
+And since we use immer we can only modify the data using the set methods kinda like `useState` but we use [drafts](https://immerjs.github.io/immer/return/) from immer
 ```ts
 setUser(draftUser => {
     draftUser.name = "Johny Doe";
