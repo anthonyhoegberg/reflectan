@@ -23,7 +23,7 @@ And we create our store like:
 ```ts
 // Type is infered here from initialState 
 const useStore = createStore(initialState);
-// but we can pass in type with
+// and if needed we can pass in type with
 const useStore = createStore<TypeHere>(initialState);
 ```
 Now to use our store inside an component we do:
