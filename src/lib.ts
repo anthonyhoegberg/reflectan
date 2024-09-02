@@ -98,7 +98,6 @@ function createStore<T extends object>(initialState: T) {
                     const current = selector(state);
 
                     const [newSubDraft, patches, inverse] = produceWithPatches(current, subDraft);
-                    console.log(patches, inverse)
                     set(mainDraft, path, newSubDraft);
                 });
             },
